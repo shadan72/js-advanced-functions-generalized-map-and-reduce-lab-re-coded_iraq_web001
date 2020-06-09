@@ -17,4 +17,5 @@ const reduce=function(arr,xx,start){
   for(i=1;i<arr.length;i++){
     acc=xx(acc,arr[i])
   }
+  return acc;
 }
