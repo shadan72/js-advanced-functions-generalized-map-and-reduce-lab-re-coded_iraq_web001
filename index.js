@@ -8,3 +8,13 @@ const map=function(arr,xx){
   });
   return newarr;
 }
+
+const reduce=function(arr,xx,start){
+  let acc=arr[0];
+  let i;
+  if(!!start)
+  acc +=start;
+  for(i=1;i<arr.length;i++){
+    acc=xx(acc,arr[i])
+  }
+}
